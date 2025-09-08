@@ -1122,19 +1122,6 @@
     </div>
 </section>
 
-<script>
-function toggleText() {
-    var moreText = document.getElementById("moreText");
-    var btn = document.getElementById("showMoreBtn");
-    if (moreText.style.display === "none") {
-        moreText.style.display = "block";
-        btn.innerText = "Show Less";
-    } else {
-        moreText.style.display = "none";
-        btn.innerText = "Show More";
-    }
-}
-</script>
 
 
 
@@ -2305,6 +2292,19 @@ function toggleText() {
             tags.classList.toggle('collapsed');
         });
     });
+
+    function toggleText() {
+    var moreText = document.getElementById("moreText");
+    var btn = document.getElementById("showMoreBtn");
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        btn.innerText = "Show Less";
+    } else {
+        moreText.style.display = "none";
+        btn.innerText = "Show More";
+    }
+}
 </script>
 </body>
+
 </html>
